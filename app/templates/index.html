@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/static/main.css" />
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+    <title>ohman.cool</title>
+</head>
+<body>
+    <div class="flex-container">
+        <span id="header-banner-logo" class="header">
+            <span class='box banner'>ohman.cool</span>
+            <span class='box side-projects'><p.box>Hello {{ current_user.username }}</p></span>
+        </span>
+        <div class="ohman-content flex-container">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+        <div class="footer">
+            <h2><a href="/contact">contact</a></h2>
+        </div>
+    </div>
+    <script type='text/javascript' src='/static/js/ohmancool.js'></script>
+</body>
+</html>
